@@ -30,6 +30,10 @@ server {
         location / {
                 try_files $uri $uri/ =404;
         }
+
+        location /img {
+		alias /var/www/hw01.ericgift/img;
+	}
 }
 
 
